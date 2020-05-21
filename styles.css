@@ -10,13 +10,21 @@ body {
 /* Header */
 
 header {
+  display: flex;
+  width: 100%;
+  padding: 50px;
   background: powderblue;
+  border: 1px solid red;
 }
 
 /* Main */
 
 main {
   background-color: gray;
+}
+
+.banner {
+  margin: 40px 20px 10px 20px;
 }
 
 /* Gallery */
