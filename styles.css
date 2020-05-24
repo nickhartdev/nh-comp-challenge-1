@@ -42,13 +42,13 @@ nav {
 
 main {
   display: grid;
-  grid-template-columns: 2% 1fr 2%;
+  grid-template-columns: 1fr 80% 1fr;
   background-color: gray;
 }
 
 .banner {
   grid-column: 2;
-  margin: 40px 20px 10px 20px;
+  margin: 40px 20px 10px 1%;
 }
 
 /* Gallery */
@@ -57,36 +57,32 @@ main {
   grid-column: 2;
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 
 .card {
   background-color: maroon;
-  width: 200px;
-  height: 200px;
-  margin: 20px;
+  width: 250px;
+  height: 350px;
+  margin: 1%;
 }
 
 /* Media Queries */
 
-@media screen and (max-width: 1001px) {
+@media screen and (min-width: 1208px) and (max-width: 1420px) {
   main {
-    grid-template-columns: 10% 1fr 10%;
+    grid-template-columns: 1fr 70% 1fr;
   }
+}
 
+@media screen and (max-width: 998px) {
+  main {
+    grid-template-columns: 1fr 60% 1fr;
+  }
   .gallery {
-    justify-content: flex-start;
+    justify-content: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
+  .banner {
+    margin-left: 7%;
+  }
 }
