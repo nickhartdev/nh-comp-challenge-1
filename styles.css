@@ -66,18 +66,21 @@ main {
 /*  Card Styling  */
 
 .card {
+  display: grid;
+  grid-template-rows: 35% 1fr;
   background-color: maroon;
   width: 250px;
-  height: 350px;
+  height: 375px;
   margin: 1%;
 }
 
 
 .card-image {
+  grid-area: 1;
   display: grid;
   grid-template: 2fr 1fr / 30% 1fr 25%;
   width: 250px;
-  height: 125px;
+  height: auto;
   background-color: orange;
 }
 
@@ -96,10 +99,35 @@ main {
 
 .card-text {
   display: grid;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 25%);
+}
+
+section[class*="card-text-"] > p {
+  margin-left: 10px;
+}
+
+.card-text-first-lines {
+  margin-top: 10px;
+}
+
+.card-text-1 {
+  grid-area: 1;
+}
+
+.card-text-2 {
+  grid-area: 2;
+}
+
+.card-text-3 {
+  grid-area: 3;
+}
+
+.card-text-4 {
+  grid-area: 4;
 }
 
 /* Media Queries */
+
 @media screen and (min-width: 1208px) and (max-width: 1420px) {
   main {
     grid-template-columns: 1fr 70% 1fr;
