@@ -74,7 +74,6 @@ main {
   margin: 1%;
 }
 
-
 .card-image {
   grid-area: 1;
   display: grid;
@@ -97,16 +96,16 @@ main {
   margin: auto;
 }
 
-.card-text {
+.card-text-container {
   display: grid;
-  grid-template-rows: repeat(4, 25%);
+  grid-template-rows: repeat(3, 23%) 1fr;
 }
 
 section[class*="card-text-"] > p {
   margin-left: 10px;
 }
 
-.card-text-first-lines {
+.text-top-spacing {
   margin-top: 10px;
 }
 
@@ -116,6 +115,22 @@ section[class*="card-text-"] > p {
 
 .card-text-2 {
   grid-area: 2;
+  display: flex;
+  align-items: center;
+}
+
+.card-text-2-container {
+  display: flex;
+  align-items: center;
+  width: 224px;
+  height: 40px;
+  background: white;
+  margin: auto;
+}
+
+.card-text-2-container > a {
+  margin-left: 5px;
+  font-size: .75em;
 }
 
 .card-text-3 {
@@ -124,6 +139,19 @@ section[class*="card-text-"] > p {
 
 .card-text-4 {
   grid-area: 4;
+}
+
+.card-subheading {
+  font-size: .7em
+}
+
+.card-bottom-info {
+  margin-top: 5px;
+}
+
+.card-text-accent {
+  color: powderblue;
+  font-size: 2em;
 }
 
 /* Media Queries */
