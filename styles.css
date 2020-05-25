@@ -44,8 +44,16 @@ nav {
 
 .logo-area {
   grid-area: 2 / 3;
+  display: flex;
   margin: auto;
 }
+
+#logo {
+  height: 35px;
+  width: 35px;
+  align-self: center;
+}
+
 
 /* Main */
 
