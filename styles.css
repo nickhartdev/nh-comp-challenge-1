@@ -45,11 +45,12 @@ nav {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 80% 1fr;
+  grid-template-columns: 1fr 98% 1fr;
   background-color: gray;
 }
 
 .banner {
+  display: flex;
   grid-column: 2;
   margin: 40px 20px 10px 1%;
 }
@@ -67,7 +68,7 @@ main {
 
 .card {
   display: grid;
-  grid-template-rows: 35% 1fr;
+  grid-template: 35% 1fr;
   background-color: maroon;
   width: 250px;
   height: 375px;
@@ -78,7 +79,7 @@ main {
   grid-area: 1;
   display: grid;
   grid-template: 2fr 1fr / 30% 1fr 25%;
-  width: 250px;
+  width: auto;
   height: auto;
   background-color: orange;
 }
@@ -156,20 +157,41 @@ section[class*="card-text-"] > p {
 
 /* Media Queries */
 
-@media screen and (min-width: 1208px) and (max-width: 1420px) {
-  main {
-    grid-template-columns: 1fr 70% 1fr;
+@media only screen and (max-width: 815px) {
+  header {
+    grid-template: 1fr 2fr / 50% 20% 30%;
   }
 }
 
-@media screen and (max-width: 998px) {
-  main {
-    grid-template-columns: 1fr 60% 1fr;
+@media only screen and (max-width: 531px) {
+  header {
+    grid-template-rows: 15% 2fr 1fr;
+    grid-template-columns: none;
+    height: 15vh;
   }
+
+  nav {
+    grid-area: 3;
+    align-content: space-between;
+  }
+
+  #login {
+    grid-area: 1;
+  }
+
+  #logo {
+    grid-area: 2;
+  }
+
+  .banner {
+    justify-content: center;
+  }
+
   .gallery {
     justify-content: center;
   }
-  .banner {
-    margin-left: 7%;
+
+  .card {
+    margin-bottom: 2%
   }
 }
