@@ -42,7 +42,7 @@ nav {
   margin: auto;
 }
 
-#logo {
+.logo-area {
   grid-area: 2 / 3;
   margin: auto;
 }
@@ -185,7 +185,7 @@ section[class*="card-text-"] > p {
     grid-area: 1;
   }
 
-  #logo {
+  .logo-area {
     grid-area: 2;
   }
 
