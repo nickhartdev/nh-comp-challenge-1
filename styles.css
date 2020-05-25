@@ -48,7 +48,7 @@ nav {
   margin: auto;
 }
 
-#logo {
+#pinit-logo {
   height: 35px;
   width: 35px;
   align-self: center;
@@ -99,11 +99,19 @@ main {
 }
 
 .card-image-button {
+  display: flex;
+  justify-content: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background: white;
   margin: 10px;
+}
+
+.card-image-icon {
+  align-self: center;
+  width: 30px;
+  height: 30px;
 }
 
 .card-image-caption {
