@@ -8,12 +8,18 @@
   <body>
     <header>
       <nav>
-        <img src="assets/icons/mountain2.png" alt="Mountain icon" class="nav-icon">
-        <a href="" class="nav-link">Your Feed</a>
-        <img src="assets/icons/mountain.png" alt="Mountain icon with magnifying glass" class="nav-icon">
-        <a href="" class="nav-link">Discover</a>
-        <img src="assets/icons/red-flag.png" alt="Red flag" class="nav-icon">
-        <a href="" class="nav-link underline">Travel Wishlist</a>
+        <div class="nav-link-container">
+          <img src="assets/icons/mountain2.png" alt="Mountain icon" class="nav-icon">
+          <a href="" class="nav-link">Your Feed</a>
+        </div>
+        <div class="nav-link-container">
+          <img src="assets/icons/mountain.png" alt="Mountain icon with magnifying glass" class="nav-icon">
+          <a href="" class="nav-link">Discover</a>
+        </div>
+        <div class="nav-link-container">
+          <img src="assets/icons/red-flag.png" alt="Red flag" class="nav-icon">
+          <a href="" class="nav-link underline">Saved Places</a>
+        </div>
       </nav>
       <section class="logo-area">
         <h2>PinIt</h2>
@@ -25,10 +31,11 @@
       </section>
     </header>
     <main>
-      <h1 class="banner">Your Travel Wishlist</h1>
+      <h1 class="banner">Your Saved Places</h1>
       <section class="gallery">
         <section class="card">
           <section class="card-image-section">
+            <section class="card-image-overlay card-image"></section>
             <img src="assets/grandtetonrange.jpg" class="card-image" alt="Grand Teton Mountain Range">
             <button class="card-image-button">
               <img src="assets/icons/plus.png" alt="Plus sign" class="card-image-icon">
