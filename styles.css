@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,8 +10,19 @@ body {
   background-color: #F0EBE9;
 }
 
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
 h2 {
-  font-size: 2.25em;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+}
+
+p, a {
+  font-family: 'Raleway', sans-serif;
 }
 
 /* Header */
@@ -43,7 +57,6 @@ nav {
 
 .nav-link {
   text-decoration: none;
-  font-size: 1.1em;
 }
 
 .underline {
@@ -126,20 +139,20 @@ main {
 
 .card-image-button {
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 10px;
+  left: 10px;
   display: flex;
   justify-content: center;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: white;
 }
 
 .card-image-icon {
   align-self: center;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .card-image-caption {
