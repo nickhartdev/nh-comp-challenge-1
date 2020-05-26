@@ -224,20 +224,6 @@ section[class*="card-text-"] > p {
 
 @media only screen and (max-width: 590px) {
   header {
-    grid-template: 1fr 2fr / 70% 30%;
-  }
-
-  .login-area {
-    grid-area: 1 / 2;
-  }
-
-  .logo-area {
-    grid-area: 1 / 3;
-  }
-}
-
-@media only screen and (max-width: 531px) {
-  header {
     display: flex;
     flex-flow: column-reverse nowrap;
     height: 15vh;
